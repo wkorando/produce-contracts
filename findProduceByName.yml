@@ -1,5 +1,6 @@
 name: find-produce-by-name
 description: Find find all produce that matches supplied name
+ignored: true
 request:
   method: GET
   url: /api/v1/produce/Apple

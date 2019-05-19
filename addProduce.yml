@@ -1,5 +1,6 @@
 description: |
   Add a new produce item
+ignored: true
 name: find-all-produce
 request:
   method: POST
