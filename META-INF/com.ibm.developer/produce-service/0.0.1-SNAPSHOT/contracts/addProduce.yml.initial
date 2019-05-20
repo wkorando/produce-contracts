@@ -1,5 +1,6 @@
-description:
-  Add a new produce item
+name: add-produce
+description: Operation for adding a new produce item
+ignored: true
 request:
   method: POST
   url: /api/v1/produce
