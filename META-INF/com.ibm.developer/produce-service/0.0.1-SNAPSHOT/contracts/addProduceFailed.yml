@@ -1,6 +1,5 @@
 name: add-produce-bad-client-data
 description: Client attempts to add new produce item, but doesn't supply a required field.
-ignored: true
 priority: 1
 request:
   method: POST
