@@ -1,6 +1,5 @@
 name: add-produce
 description: Operation for adding a new produce item
-ignored: true
 request:
   method: POST
   url: /api/v1/produce
@@ -10,6 +9,8 @@ request:
     name: "Kiwi"
     subName: ""
     quantity: 75
+	subClass:
+		subPropperty: ""
   matchers:
     headers:
     - key: Content-Type
