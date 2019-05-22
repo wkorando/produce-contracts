@@ -15,7 +15,7 @@ request:
     - key: Content-Type
       regex: "application/json.*"
 response:
-  status: 500
+  status: 400
   body:
     errorMessage: "Missing required value!"
   headers:
