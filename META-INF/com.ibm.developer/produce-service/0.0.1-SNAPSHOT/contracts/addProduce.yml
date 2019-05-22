@@ -9,8 +9,6 @@ request:
     name: "Kiwi"
     subName: ""
     quantity: 75
-	subClass:
-		subPropperty: ""
   matchers:
     headers:
     - key: Content-Type
