@@ -6,7 +6,7 @@ request:
   matchers:
     headers:
     - key: url
-      regex: "/api/v1/produce/*"
+      regex: "/api/v1/produce/.*"
     body:
       - path: $.quantity
         type: by_regex
