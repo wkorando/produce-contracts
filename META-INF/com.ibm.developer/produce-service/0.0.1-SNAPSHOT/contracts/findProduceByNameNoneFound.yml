@@ -1,9 +1,19 @@
 name: find-produce-by-name
 description: Find find all produce that matches supplied name
-priority: 1
 request:
   method: GET
-  url: /api/v1/produce/Apple
+  url: /api/v1/produce/NOT_FOUND
+  matchers:
+    headers:
+    - key: url
+      regex: "/api/v1/produce/*"
+    body:
+      - path: $.quantity
+        type: by_regex
+        value: "[0-9]+"
+      - path: $.name
+        type: by_regex
+        predefined: only_alpha_unicode
 response:
   status: 200
   body:

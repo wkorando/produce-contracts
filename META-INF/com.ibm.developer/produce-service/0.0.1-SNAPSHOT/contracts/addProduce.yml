@@ -24,9 +24,9 @@ response:
   status: 200
   body:
     id: 10
-    name: "Kiwi"
-    subName: ""
-    quantity: 75
+    name: "{{{ jsonpath this '$.name' }}}"
+    subName: "{{{ jsonpath this '$.subName' }}}"
+    quantity: "{{{ jsonpath this '$.quantity' }}}"
   headers:
     Content-Type: application/json;charset=UTF-8
   matchers:
