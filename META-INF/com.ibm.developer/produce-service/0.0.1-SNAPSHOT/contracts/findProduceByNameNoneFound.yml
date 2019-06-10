@@ -15,15 +15,8 @@ request:
         type: by_regex
         predefined: only_alpha_unicode
 response:
-  status: 200
+  status: 400
   body:
-    - id: 1
-      name: "Apple"
-      subName: "Granny Smith"
-      quantity: 100
-    - id: 2
-      name: "Apple"
-      subName: "Gala"
-      quantity: 50
+    errorMessage: "No produce found that matches name!"
   headers:
     Content-Type: application/json;charset=UTF-8
