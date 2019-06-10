@@ -1,4 +1,4 @@
-name: find-produce-by-name
+name: find-produce-by-name-not-found
 description: Find find all produce that matches supplied name
 request:
   method: GET
