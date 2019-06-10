@@ -4,8 +4,7 @@ request:
   method: GET
   url: /api/v1/produce/NOT_FOUND
   matchers:
-    headers:
-    - key: url
+    url:
       regex: "/api/v1/produce/.*"
     body:
       - path: $.quantity
