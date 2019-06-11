@@ -14,22 +14,19 @@ request:
     - key: Content-Type
       regex: "application/json.*"
     body:
-      - path: $.name
-        type: by_regex
-        predefined: only_alpha_unicode
-      - path: $.subName
-        type: by_regex
-        predefined: only_alpha_unicode
       - path: $.quantity
         type: by_regex
         value: "[0-9]+"
+      - path: $.name
+        type: by_regex
+        predefined: only_alpha_unicode
 response:
   status: 200
   body:
     id: 10
-    name: "{{{ jsonpath this '$.name' }}}"
-    subName: "{{{ jsonpath this '$.subName' }}}"
-    quantity: "{{{ jsonpath this '$.quantity' }}}"
+    name: "Kiwi"
+    subName: ""
+    quantity: 75
   headers:
     Content-Type: application/json;charset=UTF-8
   matchers:
