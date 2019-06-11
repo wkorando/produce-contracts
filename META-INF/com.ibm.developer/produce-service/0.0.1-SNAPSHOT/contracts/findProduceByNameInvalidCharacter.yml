@@ -1,0 +1,15 @@
+name: find-produce-by-name-invalid-character
+description: Find find all produce that matches supplied name
+priority: 1
+request:
+  method: GET
+  url: /api/v1/produce/+
+  matchers:
+    url:
+      regex: "/api/v1/produce/^\\W+$"
+response:
+  status: 400
+  body:
+    errorMessage: "Produce name must be alpha numeric!"
+  headers:
+    Content-Type: application/json;charset=UTF-8
